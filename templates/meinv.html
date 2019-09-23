@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<body>
+    <a href="/">
+        <button type="button">Like Me!</button>
+        <button type="button">DEL!</button>
+    </a>
+    <div>
+        {% for img in imgSrc %}
+        <img src="/imgs/{{img}}" alt="{{img}}"> {% endfor %}
+    </div>
+</body>
+
+</html>
