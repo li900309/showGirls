@@ -18,6 +18,7 @@ headers = {
 def get_page_a1(url):
     print(url)
     res = requests.get(url, headers=headers)
+    res.encoding="utf-8"
     bs = BeautifulSoup(res.text, 'lxml')
     imgs = bs.find_all('img', class_='content_img')
     for img in imgs:
