@@ -1,15 +1,35 @@
 <!doctype html>
 <html>
 
+<head>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 45px 62px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 56px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
 <body>
     <a href="/">
-        <button type="button">Like Me!</button>
-        <button type="button">DEL!</button>
+        <button type="button" class="button">Like Me!</button>
+        <button type="button" class="button">DEL!</button>
     </a>
     <div>
         {% for img in imgSrc %}
-        <img src="/imgs/{{img}}" alt="{{img}}"> {% endfor %}
+        <img src="/imgs/{{img}}" alt="{{img}}" width=1200px> {% endfor %}
     </div>
+    <a href="/">
+        <button type="button" class="button">NEXT!</button>
+    </a>
 </body>
 
 </html>
